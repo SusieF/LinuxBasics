@@ -1,0 +1,16 @@
+How to delete a non-empty directory in Terminal?
+
+Tried:
+rmdir foldername
+
+This error comes up:
+rmdir: failed to remove `lampp': Directory not empty
+
+Solution:
+rm -rf foldername
+It deletes all files and folders contained in the lampp directory.
+
+Note: letters -f, -r, -v:
+    -f = to ignore non-existent files, never prompt
+    -r = to remove directories and their contents recursively
+    -v = to explain what is being done
